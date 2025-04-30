@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Undangan Haul</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      background-image: url('https://i.ibb.co/3s5pCZq/batik-soft.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h2, h3 {
+      text-align: center;
+    }
+
+    p, ul {
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .foto {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .foto img {
+      width: 180px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    }
+
+    .signature {
+      text-align: right;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Musik Otomatis -->
+  <audio autoplay loop hidden>
+    <source src="musik.mp3" type="audio/mpeg">
+    Browser tidak mendukung audio.
+  </audio>
+
+  <div class="container">
+    <h2>UNDANGAN HAUL</h2>
+    <h3>Alm. KH. Ahmad Ma'ruf</h3>
+
+    <div class="foto">
+      <img src="foto.jpg" alt="Foto Almarhum">
+    </div>
+
+    <p>Assalamu'alaikum Warahmatullahi Wabarakatuh</p>
+
+    <p>Dengan hormat, kami mengundang Bapak/Ibu/Saudara(i) untuk menghadiri acara haul ke-7 Alm. KH. Ahmad Ma’ruf yang insyaAllah akan dilaksanakan pada:</p>
+
+    <ul>
+      <li><strong>Hari/Tanggal:</strong> Sabtu, 11 Mei 2025</li>
+      <li><strong>Waktu:</strong> Pukul 19.30 WIB s/d selesai</li>
+      <li><strong>Tempat:</strong> Pondok Pesantren Darussalam, Ds. Sukamaju, Kec. Banyuresmi</li>
+    </ul>
+
+    <p>Acara ini akan diisi dengan pembacaan Yasin, tahlil, dan tausiyah agama. Kehadiran dan doa dari Bapak/Ibu/Saudara(i) sangat kami harapkan demi keberkahan dan kelancaran acara ini.</p>
+
+    <p>Wassalamu’alaikum Warahmatullahi Wabarakatuh</p>
+
+    <div class="signature">
+      Hormat kami,<br>
+      Keluarga Besar Alm. KH. Ahmad Ma’ruf
+    </div>
+  
+    <hr>
+    <h3 style="text-align:center;">Daftar Hadir</h3>
+    <form action="#" method="POST" onsubmit="alert('Terima kasih, data Anda telah dicatat. (Fitur offline simulasi)'); return false;">
+      <p>Nama Lengkap:<br>
+        <input type="text" name="nama" required style="width:100%; padding:8px;">
+      </p>
+      <p>Kehadiran:<br>
+        <select name="kehadiran" required style="width:100%; padding:8px;">
+          <option value="">-- Pilih --</option>
+          <option value="Hadir">Hadir</option>
+          <option value="Berhalangan">Berhalangan</option>
+        </select>
+      </p>
+      <p style="text-align:center;">
+        <button type="submit" style="padding:10px 20px; font-size:16px;">Kirim</button>
+      </p>
+    </form>
+
+</div>
+</body>
+</html>
