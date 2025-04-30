@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Undangan Tahlil</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('bg-emas1.png');
+      background-size: cover;
+      background-position: center;
+      font-family: 'Segoe UI', sans-serif;
+      color: #3a3a3a;
+    }
+    .container {
+      background-color: rgba(255,255,255,0.92);
+      margin: 1em auto;
+      padding: 1.5em;
+      max-width: 95%;
+      width: 600px;
+      border-radius: 25px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    h1, h2 {
+      color: goldenrod;
+      margin-bottom: 0.3em;
+    }
+    .arab {
+      font-size: 1.5em;
+      color: goldenrod;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    .info {
+      margin: 1em 0;
+      font-size: 1.05em;
+      line-height: 1.6;
+    }
+    .footer {
+      margin-top: 2em;
+      color: #555;
+    }
+    .highlight {
+      color: goldenrod;
+      font-weight: bold;
+    }
+    img.photo {
+      display: block;
+      margin: 1em auto;
+      max-width: 300px;
+      border: 6px solid goldenrod;
+      border-radius: 18px;
+    }
+    form {
+      margin-top: 2em;
+    }
+    input[type="text"], input[type="submit"] {
+      width: 100%;
+      padding: 0.8em;
+      margin: 0.5em 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    input[type="submit"] {
+      background-color: goldenrod;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #c59d00;
+    }
+    audio {
+      display: block;
+      margin: 1em auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <audio controls autoplay loop>
+      <source src="musik.mp3" type="audio/mpeg">
+      Musik tidak tersedia.
+    </audio>
+    <div class="arab">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+    <p class="info">Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
+    <div class="info">
+      Dengan hormat,<br/>
+      Kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara tahlil 100 hari mengenang wafatnya:
+    </div>
+    <img class="photo" src="foto_umi.jpg" alt="Foto Almarhum">
+    <h2>HK.HALIMAH BINTI H.ABDUL KARIM</h2>
+    <div class="info">
+      Yang InsyaAllah dilaksanakan pada:<br/>
+      <strong>Hari/Tanggal:</strong> Jum'at, 01 Mei 2025<br/>
+      <strong>Waktu:</strong> 19.00 WIB (Ba’da Isya)<br/>
+      <strong>Tempat:</strong> Kediaman Orang Tua kami (Rawa Buaya Cengkareng)
+    </div>
+    <div class="info">
+      Atas kehadiran dan doanya, kami sekeluarga mengucapkan terima kasih yang sebesar-besarnya.
+    </div>
+    <p class="info">Wassalamu’alaikum Warahmatullahi Wabarakatuh</p>
+    <div class="footer">
+      Hormat kami:<br/>
+      <span class="highlight">KELUARGA BESAR H.ACHMAD AZHARI</span>
+    </div>
+
+    <form onsubmit="alert('Terima kasih, kehadiran Anda telah dicatat.'); return false;">
+      <h3 style="color: goldenrod;">Daftar Hadir</h3>
+      <input type="text" placeholder="Nama Lengkap" required />
+      <input type="text" placeholder="Ucapan atau Doa" />
+      <input type="submit" value="Kirim" />
+    </form>
+  </div>
+</body>
+</html>
